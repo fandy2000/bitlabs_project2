@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_sub"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/registext"
+        android:layout_width="227dp"
+        android:layout_height="79dp"
+        android:layout_gravity="center"
+        android:layout_margin="35dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/register"
+        android:textSize="46sp" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/name"/>
+
+    <TextView
+        android:id="@+id/error_name"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/error_email"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/error_pass"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/error_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextView"/>
+
+        <TextView
+            android:id="@+id/genderChois"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Gender"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <RadioButton
+            android:id="@+id/male_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/male"
+            android:fontFamily="@font/montserrat">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/female_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/female"
+            android:fontFamily="@font/montserrat">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
